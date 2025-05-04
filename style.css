@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -10,13 +11,29 @@ body {
     flex-wrap: wrap;
     border: 1px solid blue;
     box-shadow: 0 0 10px red;
-    width: 640px;
-    height: 640px;
+    width: 800px;
+    height: 800px;
 }
 .square {
     width: 36px;
+    margin: 0;
+    padding: 0;
     height: 36px;
-    margin: 1px;
     border: solid 1px black;
     background-color: rgb(128, 236, 128);
+}
+.hovered {
+    background-color: blue;
+}
+.reset {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid black;
+}
+.reset:hover {
+    background-color: purple;
+    color: white;
 }
